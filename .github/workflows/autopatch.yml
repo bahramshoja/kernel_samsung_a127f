@@ -1,0 +1,29 @@
+- name: Patched AutoFix
+  # You may pin to the exact commit or the version.
+  # uses: patched-codes/AutoFix@24182eab7e624798602918d4dabaddc8a814868c
+  uses: patched-codes/AutoFix@0.1.0
+  with:
+    # GitHub token for creating pull requests
+    github_token: # optional, default is ${{ github.token }}
+    # OpenAI API key for the LLM
+    openai_api_key: # optional
+    # Patched API key for using Patched services
+    patched_api_key: # optional
+    # LLM model to use
+    model: # optional
+    # Base URL for the LLM API
+    client_base_url: # optional
+    # Maximum number of vulnerabilities to fix
+    vulnerability_limit: # optional
+    # Minimum severity level of vulnerabilities to fix
+    severity: # optional
+    # Minimum compatibility threshold for fixes
+    compatibility: # optional
+    # Prefix for the created branch
+    branch_prefix: # optional, default is patched-autofix/
+    # Disable creating new branches
+    disable_branch: # optional
+    # Disable creating pull requests
+    disable_pr: # optional
+    # Force push commits to existing PR
+    force_pr_creation: # optional
